@@ -93,9 +93,7 @@ python -m venv .venv
 - 正式儲存成功後會清理對應 autosave；程式發生未處理錯誤時會嘗試建立緊急備份。
 - 「說明」選單可開啟 log 資料夾或複製診斷資訊。回報問題時請提供 `logs/lexiarbiter.log`。
 
-## 簡易測試資料與驗證
-
-`簡易測試資料/` 包含 `test_example.docx`、`test_example.lexa` 和 `readme.pdf`。PDF 說明 11 筆人工標注任務及文字範圍；目前隨附 `.lexa` 檔則實際含有 18 筆標注與 11 個概念（可能包含自動找出的相同詞語），請以 PDF 的 11 筆任務作為人工操作順序，並以實際載入的 `.lexa` 內容確認目前進度。
+## 測試與驗證
 
 執行內建測試：
 
@@ -103,4 +101,4 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-測試資料載入後，可用「儲存標註進度」另存 `.lexa`，或匯出 `.txt` 檢查標籤格式。繳交前請確認標注文字範圍、概念名稱與上位概念都符合任務單，並將最終進度另存到清楚命名的位置。
+測試判決文件、標註進度檔、autosave 與 crash backup 可能含有法律文本或標註資料，請留在本機；這些資料已列入 `.gitignore`，不會上傳到 GitHub。
