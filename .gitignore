@@ -1,0 +1,45 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local preferences and personal/runtime data
+configs/user_preferences.json
+logs/
+*.log
+*.autosave.*.lexa
+*.crash_backup.lexa
+簡易測試資料/
+work/
+
+# Local secrets and environment overrides
+.env
+.env.*
+!.env.example
+
+# Test, type-checker, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.vs/
+.DS_Store
+Thumbs.db
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+# Staging artifact from source copy
+configs/term_definition.json
