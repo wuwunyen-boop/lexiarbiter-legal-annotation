@@ -5,12 +5,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Local preferences and personal/runtime data
-configs/user_preferences.json
+# Runtime output and local user data
 logs/
 *.log
 *.autosave.*.lexa
 *.crash_backup.lexa
+configs/user_preferences.json
 簡易測試資料/
 work/
 
@@ -37,9 +37,3 @@ dist/
 .vs/
 .DS_Store
 Thumbs.db
-
-# Python bytecode
-__pycache__/
-*.py[cod]
-# Staging artifact from source copy
-configs/term_definition.json
